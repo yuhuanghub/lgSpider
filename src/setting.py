@@ -93,7 +93,12 @@ UA = ['Mozilla/5.0 (Windows NT 5.1) AppleWebKit/534.55.3 (KHTML, like Gecko) Ver
       'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.64 Safari/537.11',
       'Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Win64; x64; Trident/5.0)']
 
+#以下两个选项为城市和职业
 CITY = ['成都']
 POSITION = ['Java']
 
+"""
+下面这一堆是为了抓取毕业生信息的相关配置，如果想找实习相关信息就把全职改为全职就可以了
+当然，如果不需要抓取需要毕业生的企业下面的配置就可以不用管，直接改动main函数里的几处代码就可以了
+"""
 SCHOOL = {'gx':'全职', 'needAddtionalResult': 'false', 'isSchoolJob': '1', 'xl':'大专'}

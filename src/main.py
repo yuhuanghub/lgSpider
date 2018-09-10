@@ -7,13 +7,21 @@ from src.parse import Parse
 from src.download import DownLoad
 
 def main():
-    
+
+    #读取配置信息
     city = SETTING.CITY[0]
     position = SETTING.POSITION[0]
+
+    """
+    下面是针对大学生的配置
+    如果不需要的话注释掉就可以了,然后只需要删除Connect()里面的相关传参就可以了
+    """
     gx = SETTING.SCHOOL['gx']
     needAddtionalResult = SETTING.SCHOOL['needAddtionalResult']
     isSchoolJob = SETTING.SCHOOL['isSchoolJob']
     xl = SETTING.SCHOOL['xl']
+
+
     # 第一次请求开始
     response = Connect(kd=position, city=city, gx=gx
                        , needAddtionalResult=needAddtionalResult, isSchoolJob=isSchoolJob, xl=xl).getConnect()
